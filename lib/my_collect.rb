@@ -1,8 +1,9 @@
 def my_collect (collection)
   count = 0
+  modified = []
   while count < collection.length
-    collection[count] = collection[count].split(" ").delete_at(0)
+    modified[count] = collection[count].split(" ").delete_at(0)
     count += 1
   end
-  return collection
+  return modified
 end
